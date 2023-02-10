@@ -6,7 +6,7 @@ from tkinter import filedialog
 #importations des libraries python mixer, filedialog, et pygame
 #Filedialog permet d'importers des fichiers dans ton programme
 #pygame permet d'importer le module mixer et d'autres sous-librairies
-#mixer permet de jouer des musiqueq dans notres programme
+#mixer permet de jouer des musiques dans notres programme
 
 #Initialisation du module mixer
 mixer.init()
