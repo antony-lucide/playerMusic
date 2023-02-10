@@ -5,10 +5,12 @@ from pygame import mixer
 from tkinter import filedialog
 #importations des libraries python mixer, filedialog, et pygame
 #Filedialog permet d'importers des fichiers dans ton programme
-#pygame permet d'importer le module mixer et d'autres sous librairies
-#mixer permet de jouer des musique dans notres programme
+#pygame permet d'importer le module mixer et d'autres sous-librairies
+#mixer permet de jouer des musiqueq dans notres programme
+
 #Initialisation du module mixer
 mixer.init()
+
 #Fonction qui permet de jouer une musique dans notre programme
 #Grâce à une listbox, quand cette listbox est active, alors la musique se charge et se lance
 def Playermusic():
@@ -29,19 +31,19 @@ def Unpause():
     mixer.music.unpause()
 
 #Fonction permettant de définir la durée d'une musique
-#Avec le paramètre "son", je définis la distance de mon volume sur 100
+#Avec le paramètre "son", je définis mon volume  divisé sur 100
 def Volume(son):
     mixer.music.set_volume(int(son)/100)
 
 #Permet l'importation d'un fichier dans une listbox
 #Grâce à la variable "fichier", je lui assigne la propriété permettant l'important de fichier type "mp3"
-#Ensuite je insert l'important dans ma listbox
+#Ensuite je l'insert dans ma listbox
 def importation():
     global fichier
     fichier = filedialog.askopenfilename(filetypes=(("Mp3 Files", "*.mp3"),))
     list_box.insert(END,fichier)
 
-#Permet de supprimer éléments de ma listbox
+#Permet de supprimer  des éléments de ma listbox
 def supprime():
     list_box.delete(ANCHOR)
 
